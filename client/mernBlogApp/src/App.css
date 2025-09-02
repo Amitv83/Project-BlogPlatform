@@ -13,7 +13,7 @@ img{
 
 main{
   padding:10px;
-  max-width:700px;
+  max-width:1000px;
    margin:0 auto;
 }
 
@@ -49,6 +49,9 @@ div.post{
   grid-template-columns:  .9fr 1.1fr;
   gap :20px;
   margin-bottom:30px;
+  justify-items: center;
+  align-items: center;
+  background-color: #e9f5f7;
 }
 
 
@@ -108,9 +111,25 @@ button{
   color:#fff;
   border-radius:5px;
   padding:7px 0;
-
+  cursor: pointer;
 }
-
+button:hover{
+  background-color: #333;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: background-color 0.3s;
+}
+header button, header .navLinks a{
+  width:auto;
+  padding:5px 10px;
+  font-size:1rem;
+  cursor:pointer;
+  background-color: rgb(75, 26, 120);
+  color: #fff;
+}
+header button:hover, header .navLinks a:hover{
+  background-color: rgb(183, 107, 255);
+  transition: background-color 0.3s;
+}
 
 form.login h1,form.register h1{
   text-align: center;
